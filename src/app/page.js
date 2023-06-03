@@ -1,8 +1,14 @@
+import Footer from "components/Footer";
+import Navbar from "components/Navbar";
+
 export default function Home() {
   return (
   <>
-   hey this is code swear
-   <div className='mx-4 bg-slate-400'>this is me</div>
+  <Navbar/>
+  <div>
+    <img src="/homee.webp" className="w-[100%]"/>
+  </div>
+  <Footer/>
    </>
   );
 };
