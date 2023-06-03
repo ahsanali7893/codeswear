@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import about from './about'
 
 export default function Home() {
   return (
+
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
@@ -24,10 +26,11 @@ export default function Home() {
               height={24}
               priority
             />
+            <about/>
           </a>
         </div>
       </div>
-
+          
       <div className={styles.center}>
         <Image
           className={styles.logo}
@@ -89,7 +92,9 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
+        
       </div>
+      <about/>
     </main>
   )
 }
