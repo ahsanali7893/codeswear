@@ -1,11 +1,8 @@
-import React from 'react'
-
-const Slug = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+import { useRouter } from 'next/router';
+ 
+const Post = () => {
+  const router = useRouter();
+  const {slug} = router.query
+  return <p>The slug is: {slug}</p>;
 }
-
-export default Slug;
+export default Post;
