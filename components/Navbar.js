@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className='flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md'>
         <div className='logo mx-5'>
-            <Image width={200} height={40} src='/logo.webp'/>
+            <Link href={"/"}><Image width={200} height={40} src='/logo.webp' className='cursor-pointer'/></Link>
         </div>
         <div className='nav'>
             <ul className='flex items-center space-x-4 font-bold md:text-md'>
