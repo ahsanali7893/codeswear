@@ -10,7 +10,7 @@ const Navbar = () => {
             <Image width={200} height={40} src='/logo.webp'/>
         </div>
         <div className='nav'>
-            <ul className='flex items-center space-x-2 font-bold md:text-xl'>
+            <ul className='flex items-center space-x-4 font-bold md:text-md'>
                 <Link href={"/tshirts"}><li>Tshirts</li></Link>
                 <Link href={"/hoodies"}><li>Hoodies</li></Link>
                 <Link href={"/stickers"}><li>Stickers</li></Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
             </ul>
         </div>
         <div className='cart absolute right-0 top-4 mx-5'>
-            <AiOutlineShoppingCart className='text-xl md:text-3xl'/>
+            <AiOutlineShoppingCart className='text-xl md:text-2xl'/>
         </div>
       
     </div>
