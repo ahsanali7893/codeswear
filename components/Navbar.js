@@ -11,10 +11,10 @@ const Navbar = () => {
         </div>
         <div className='nav'>
             <ul className='flex items-center space-x-2 font-bold md:text-xl'>
-                <Link href={"/"}><li>Tshirt</li></Link>
-                <Link href={"/"}><li>Hoodies</li></Link>
-                <Link href={"/"}><li>Stickers</li></Link>
-                <Link href={"/"}><li>Mugs</li></Link>
+                <Link href={"/tshirts"}><li>Tshirts</li></Link>
+                <Link href={"/hoodies"}><li>Hoodies</li></Link>
+                <Link href={"/stickers"}><li>Stickers</li></Link>
+                <Link href={"/mugs"}><li>Mugs</li></Link>
             </ul>
         </div>
         <div className='cart absolute right-0 top-4 mx-5'>

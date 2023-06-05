@@ -1,6 +1,6 @@
 import React from 'react'
 
-const tshirt = () => {
+const tshirts = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const tshirt = () => {
   )
 }
 
-export default tshirt
+export default tshirts
