@@ -5,7 +5,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Navbar = () => {
   return (
-    <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2'>
+    <div className='flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-xl'>
         <div className='logo mx-5'>
             <Image width={200} height={40} src='/logo.webp'/>
         </div>
