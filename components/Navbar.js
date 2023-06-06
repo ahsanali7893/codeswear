@@ -43,7 +43,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div onClick={toggleCart} className="cart absolute right-0 top-4 mx-5">
+      <div onClick={toggleCart} className="cursor-pointer cart absolute right-0 top-4 mx-5">
         <AiOutlineShoppingCart className="text-xl md:text-2xl" />
       </div>
       <div
@@ -59,7 +59,8 @@ const Navbar = () => {
         </span>
         <ol>
           <li>
-            <span>Tshirts - Wear the Code</span>
+            <span className="w-2/3 bg-red-50">Tshirts - Wear the Code</span>
+            <span className="w-1/3 bg-green-50">1</span>
           </li>
         </ol>
       </div>
