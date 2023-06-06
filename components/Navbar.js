@@ -1,9 +1,20 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import react from "react";
+import { AiOutlineShoppingCart, AiFillCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
+  const toggleCart = () => {
+    if (ref.current.classList.contains('translate-x-full')){
+        ref.current.classList.remove('translate-x-full')
+        ref.current.classList.add('translate-x-0')
+    }
+    else if (!ref.current.classList.contains('translate-x-full')){
+        ref.current.classList.remove('translate-x-0')
+        ref.current.classList.add('translate-x-full')
+    }
+  };
+  const ref = react.useRef();
   return (
     <div className="flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md">
       <div className="logo mx-5">
@@ -32,8 +43,25 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div className="cart absolute right-0 top-4 mx-5">
+      <div onClick={toggleCart} className="cart absolute right-0 top-4 mx-5">
         <AiOutlineShoppingCart className="text-xl md:text-2xl" />
+      </div>
+      <div
+        ref={ref}
+        className="sideCart absolute top-0 right-0 bg-pink-100 p-10 transform transition-transform translate-x-full"
+      >
+        <h2 className="font-bold text-xl">Shopping Cart</h2>
+        <span
+          onClick={toggleCart}
+          className="absolute top-5 right-2 cursor-pointer text-2xl text-pink-500"
+        >
+          <AiFillCloseCircle />
+        </span>
+        <ol>
+          <li>
+            <span>Tshirts - Wear the Code</span>
+          </li>
+        </ol>
       </div>
     </div>
   );
