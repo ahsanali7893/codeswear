@@ -1,20 +1,21 @@
 import Image from "next/image";
+import React, { createRef } from "react";
 import Link from "next/link";
 import react from "react";
 import { AiOutlineShoppingCart, AiFillCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
   const toggleCart = () => {
-    if (ref.current.classList.contains('translate-x-full')){
-        ref.current.classList.remove('translate-x-full')
-        ref.current.classList.add('translate-x-0')
-    }
-    else if (!ref.current.classList.contains('translate-x-full')){
-        ref.current.classList.remove('translate-x-0')
-        ref.current.classList.add('translate-x-full')
+    if (ref.current.classList.contains("translate-x-full")) {
+      ref.current.classList.remove("translate-x-full");
+      ref.current.classList.add("translate-x-0");
+    } else if (!ref.current.classList.contains("translate-x-full")) {
+      ref.current.classList.remove("translate-x-0");
+      ref.current.classList.add("translate-x-full");
     }
   };
-  const ref = react.useRef();
+
+  const ref = Ref();
   return (
     <div className="flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md">
       <div className="logo mx-5">
@@ -43,24 +44,55 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div onClick={toggleCart} className="cursor-pointer cart absolute right-0 top-4 mx-5">
+      <div
+        className="cursor-pointer cart absolute right-0 top-4 mx-5"
+        onClick={toggleCart}
+      >
         <AiOutlineShoppingCart className="text-xl md:text-2xl" />
       </div>
       <div
         ref={ref}
-        className="sideCart absolute top-0 right-0 bg-pink-100 p-10 transform transition-transform translate-x-full"
+        className="sideCart w-72 absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full"
       >
-        <h2 className="font-bold text-xl">Shopping Cart</h2>
+        <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
         <span
-          onClick={toggleCart}
           className="absolute top-5 right-2 cursor-pointer text-2xl text-pink-500"
+          onClick={toggleCart}
         >
           <AiFillCloseCircle />
         </span>
-        <ol>
+        <ol className="list-decimal font-semibold">
           <li>
-            <span className="w-2/3 bg-red-50">Tshirts - Wear the Code</span>
-            <span className="w-1/3 bg-green-50">1</span>
+            <div className="item flex my-5">
+              <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
+              <div className="w-1/3 font-semibold flex items-center justify-center">
+                1
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex my-5">
+              <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
+              <div className="w-1/3 font-semibold flex items-center justify-center">
+                1
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex my-5">
+              <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
+              <div className="w-1/3 font-semibold flex items-center justify-center">
+                1
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="item flex my-5">
+              <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
+              <div className="w-1/3 font-semibold flex items-center justify-center">
+                1
+              </div>
+            </div>
           </li>
         </ol>
       </div>
