@@ -1,12 +1,11 @@
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
-import "../app/globals.css"
-
+import "../app/globals.css";
 
 export default function Home() {
   return (
     <>
-     <Navbar/>
+      <Navbar />
       <div>
         <img src="/homee.webp" className="w-[100%]" />
       </div>
@@ -172,7 +171,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    <Footer/>
+      <Footer />
     </>
   );
 }

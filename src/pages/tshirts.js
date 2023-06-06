@@ -16,13 +16,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-               
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -38,13 +37,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-                
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -60,13 +58,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-               
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -82,13 +79,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-               
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -104,13 +100,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-                
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -126,13 +121,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-                
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -148,13 +142,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-               
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
@@ -170,13 +163,12 @@ const tshirts = () => {
                 href={"/product/wear-the-code"}
                 className="lg:w-1/5 md:w-1/2 p-4 w-full block relative rounded overflow-hidden shadow-lg m-5"
               >
-                
-                  <img
-                    alt="ecommerce"
-                    className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
-                    src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
-                  />
-               
+                <img
+                  alt="ecommerce"
+                  className="m-auto md:mx-0 h-[30vh] md:h-[36vh] block"
+                  src="https://m.media-amazon.com/images/I/61KtrldtmeL._AC_UY550_.jpg"
+                />
+
                 <div className="mt-4 text-center md:text-left">
                   <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
                     T-Shirt
