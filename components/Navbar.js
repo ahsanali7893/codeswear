@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, {useRef} from "react";
+import "../src/app/globals.css";
 import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
 
 const Navbar = () => {
@@ -65,8 +66,8 @@ const Navbar = () => {
           <li>
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
-              <div className="w-1/3 font-semibold flex items-center justify-center">
-              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
+              <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
+              <AiFillMinusCircle/><span className="mx-2">1</span><AiFillPlusCircle/> 
               </div>
             </div>
           </li>
@@ -74,7 +75,7 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center">
-              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
+              <AiFillMinusCircle/> 1 <AiFillPlusCircle/> 
               </div>
             </div>
           </li>
