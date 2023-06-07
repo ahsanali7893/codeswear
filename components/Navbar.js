@@ -1,9 +1,14 @@
-'use client';
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "../src/app/globals.css";
-import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
+import {
+  AiOutlineShoppingCart,
+  AiFillCloseCircle,
+  AiFillPlusCircle,
+  AiFillMinusCircle,
+} from "react-icons/ai";
 import { BsFillBagCheckFill } from "react-icons/bs";
 
 const Navbar = () => {
@@ -68,7 +73,9 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
-              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
+                <AiFillMinusCircle className="cursor-pointer text-pink-500" />
+                <span className="mx-2">1</span>
+                <AiFillPlusCircle className="cursor-pointer text-pink-500" />
               </div>
             </div>
           </li>
@@ -76,7 +83,9 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
-              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
+                <AiFillMinusCircle className="cursor-pointer text-pink-500" />
+                <span className="mx-2">1</span>
+                <AiFillPlusCircle className="cursor-pointer text-pink-500" />
               </div>
             </div>
           </li>
@@ -84,7 +93,9 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
-              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
+                <AiFillMinusCircle className="cursor-pointer text-pink-500" />
+                <span className="mx-2">1</span>
+                <AiFillPlusCircle className="cursor-pointer text-pink-500" />
               </div>
             </div>
           </li>
@@ -92,14 +103,21 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
-              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
+                <AiFillMinusCircle className="cursor-pointer text-pink-500" />
+                <span className="mx-2">1</span>
+                <AiFillPlusCircle className="cursor-pointer text-pink-500" />
               </div>
             </div>
           </li>
         </ol>
         <div className="flex">
-        <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm"><BsFillBagCheckFill className="m-1"/>Checkout</button>
-        <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">Clear Cart</button>
+          <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
+            <BsFillBagCheckFill className="m-1" />
+            Checkout
+          </button>
+          <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
+            Clear Cart
+          </button>
         </div>
       </div>
     </div>
