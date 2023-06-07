@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, {useRef} from "react";
 import "../src/app/globals.css";
 import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
+import { BsFillBagCheckFill } from "react-icons/bs";
 
 const Navbar = () => {
   const toggleCart = () => {
@@ -53,7 +54,7 @@ const Navbar = () => {
       </div>
       <div
         ref={ref}
-        className="sideCart w-72 absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full"
+        className="sideCart w-72 h-full absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full"
       >
         <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
         <span
@@ -96,6 +97,7 @@ const Navbar = () => {
             </div>
           </li>
         </ol>
+        <button className="flex mt-16 text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-sm"><BsFillBagCheckFill className="m-1"/>Checkout</button>
       </div>
     </div>
   );
