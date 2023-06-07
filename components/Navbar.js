@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, {useRef} from "react";
-import { AiOutlineShoppingCart, AiFillCloseCircle } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from "react-icons/ai";
 
 const Navbar = () => {
   const toggleCart = () => {
@@ -66,7 +66,7 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center">
-                1
+              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
               </div>
             </div>
           </li>
@@ -74,7 +74,7 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center">
-                1
+              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
               </div>
             </div>
           </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center">
-                1
+              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
               </div>
             </div>
           </li>
@@ -90,7 +90,7 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center">
-                1
+              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
               </div>
             </div>
           </li>
