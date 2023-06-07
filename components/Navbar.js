@@ -67,31 +67,31 @@ const Navbar = () => {
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
               <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
-              <AiFillMinusCircle/><span className="mx-2">1</span><AiFillPlusCircle/> 
+              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
               </div>
             </div>
           </li>
           <li>
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
-              <div className="w-1/3 font-semibold flex items-center justify-center">
-              <AiFillMinusCircle/> 1 <AiFillPlusCircle/> 
+              <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
+              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
               </div>
             </div>
           </li>
           <li>
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
-              <div className="w-1/3 font-semibold flex items-center justify-center">
-              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
+              <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
+              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
               </div>
             </div>
           </li>
           <li>
             <div className="item flex my-5">
               <div className="w-2/3 font-semibold">Tshirts - Wear the Code</div>
-              <div className="w-1/3 font-semibold flex items-center justify-center">
-              <AiFillMinusCircle className="mx-3"/> 1 <AiFillPlusCircle/> 
+              <div className="w-1/3 font-semibold flex items-center justify-center text-lg">
+              <AiFillMinusCircle className="cursor-pointer text-pink-500"/><span className="mx-2">1</span><AiFillPlusCircle className="cursor-pointer text-pink-500"/> 
               </div>
             </div>
           </li>
