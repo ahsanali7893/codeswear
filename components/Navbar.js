@@ -1,7 +1,7 @@
+'use client';
 import Image from "next/image";
-import React, { createRef } from "react";
 import Link from "next/link";
-import react from "react";
+import React, {useRef} from "react";
 import { AiOutlineShoppingCart, AiFillCloseCircle } from "react-icons/ai";
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
     }
   };
 
-  const ref = Ref();
+  const ref = useRef();
   return (
     <div className="flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md">
       <div className="logo mx-5">
