@@ -70,7 +70,11 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subtotal }) => {
           <AiFillCloseCircle />
         </span>
         <ol className="list-decimal font-semibold">
-          {Object.keys(cart).length === 0 && <div>No item in the cart</div>}
+          {cart &&
+            typeof cart === "object" &&
+            Object.keys(cart).length === 0 && (
+              <div className="my-4 font-semibold">Your Cart is Empty!</div>
+            )}
           {cart &&
             typeof cart === "object" &&
             Object.keys(cart).map((k) => {

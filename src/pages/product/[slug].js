@@ -1,8 +1,8 @@
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import { useRouter } from "next/router";
-import { useState } from "react";
 import RootLayout from "@/app/layout";
+import { useState, useEffect } from "react";
 import "src/app/globals.css";
 
 const Post = () => {
@@ -18,6 +18,50 @@ const Post = () => {
     } else {
       setservice(false);
     }
+  };
+  const [cart, setCart] = useState({});
+
+  const addToCart = (itemCode, _qty, name, price, size, varriant) => {
+    let newCart = cart;
+    if (itemCode in cart) {
+      newCart[itemCode].qty = cart[itemCode].qty + 1;
+    } else {
+      newCart[itemCode] = { qty: 1, price, name, size, varriant };
+    }
+    setCart(newCart);
+    saveCart(newCart);
+  };
+  const saveCart = (myCart) => {
+    localStorage.setItem("cart", myCart);
+    let subt = 0;
+    let keys = Object.keys(cart);
+    for (let i = 0;i<keys.length; i++) {
+      subt += myCart[keys[i]].price * myCart[keys[i]].qty;
+    }
+    setsubtotal(subt);
+  };
+  const [subtotal, setsubtotal] = useState(0);
+  useEffect(() => {
+    console.log("Hey Iam a useEffect from layout.js");
+    try {
+      if (localStorage.getItem("cart")) {
+        setCart(JSON.parse(localStorage.getItem("cart")));
+      }
+    } catch (error) {
+      console.log(error);
+      localStorage.clear();
+    }
+  }, []);
+  const removeFromCart = (itemCode, qty, _name, _price, _size, _varriant) => {
+    let newCart = cart;
+    if (itemCode in cart) {
+      newCart[itemCode].qty = cart[itemCode].qty - qty;
+    }
+    if (newCart[itemCode]["qty"] <= 0) {
+      delete newCart[itemCode];
+    }
+    setCart(newCart);
+    saveCart(newCart);
   };
 
   const onChangePin = (e) => {
@@ -186,7 +230,19 @@ const Post = () => {
                 <button className="flex ml-6 text-white bg-pink-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-pink-600 rounded">
                   Buy Now
                 </button>
-                <button className="flex ml-4 text-white bg-pink-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-pink-600 rounded">
+                <button
+                  onClick={() =>
+                    addToCart(
+                      slug,
+                      1,
+                      499,
+                      "Wear The Code (XL/Blue)",
+                      "XL",
+                      "Red"
+                    )
+                  }
+                  className="flex ml-4 text-white bg-pink-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-pink-600 rounded"
+                >
                   Add to Cart
                 </button>
                 <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
