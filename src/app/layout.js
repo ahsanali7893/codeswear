@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Component } from "react";
 import React from "react";
 import "./globals.css";
 import Footer from "components/Footer";
@@ -26,6 +26,12 @@ export default function RootLayout({ children }) {
 
   const saveCart = (myCart) => {
     localStorage.setItem("cart", myCart);
+    let subt = 0;
+    let keys = Object.keys(cart)
+    for(let i=0; keys.length;i++){
+      subt += myCart [keys[i]].price * myCart [keys[i]].qty;
+    }
+    setsubtotal(subt)
   };
 
   const addToCart = (itemCode, qty, name, price, size, varriant) => {
@@ -64,7 +70,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className={inter.className}><Navbar/> {children}<Footer /></body>
+      <body className={inter.className}><Navbar cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subtotal={subtotal}/> {children}<Footer /></body>
     </html>
   );
 }
