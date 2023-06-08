@@ -9,7 +9,18 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   const [cart, setCart] = useState({});
-  const [subtotal, setsubtotal] = useState();
+  const [subtotal, setsubtotal] = useState(0);
+  useEffect(() => {
+    console.log("Hey Iam a useEffect from layout.js");
+    try {
+      if (localStorage.getItem("cart")) {
+        setCart(JSON.parse(localStorage.getItem("cart")));
+      }
+    } catch (error) {
+      console.log(error);
+      localStorage.clear();
+    }
+  }, []);
 
   const saveCart = (myCart) => {
     localStorage.setItem("cart", myCart);
