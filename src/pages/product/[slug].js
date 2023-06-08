@@ -2,6 +2,7 @@ import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import RootLayout from "@/app/layout";
 import "src/app/globals.css";
 
 const Post = () => {

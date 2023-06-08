@@ -7,7 +7,7 @@ export default function Home() {
   
   return (
     <>
-      <Navbar />
+  
       <div>
         <img src="/homee.webp" className="w-[100%]" />
       </div>
@@ -173,7 +173,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
+     
     </>
   );
 }
