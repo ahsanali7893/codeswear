@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
   const saveCart = (myCart) => {
     localStorage.setItem("cart", myCart);
     let subt = 0;
-    let keys = Object.keys(cart);
-    for (let i = 0;i<keys.length; i++) {
+    let keys = Object.keys(myCart);
+    for (let i = 0; i < keys.length; i++) {
       subt += myCart[keys[i]].price * myCart[keys[i]].qty;
     }
     setsubtotal(subt);
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
     }
     setCart(newCart);
     saveCart(newCart);
-  };
+  } ;
 
   const clearCart = () => {
     setCart({});
@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
           clearCart={clearCart}
           subtotal={subtotal}
         />
-        <tshirts/>
+        <tshirts />
         {children}
         <Footer />
       </body>

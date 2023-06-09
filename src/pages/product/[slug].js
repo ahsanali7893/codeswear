@@ -1,7 +1,6 @@
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import { useRouter } from "next/router";
-import RootLayout from "@/app/layout";
 import { useState, useEffect } from "react";
 import "src/app/globals.css";
 
@@ -19,50 +18,7 @@ const Post = () => {
       setservice(false);
     }
   };
-  const [cart, setCart] = useState({});
-
-  const addToCart = (itemCode, _qty, name, price, size, varriant) => {
-    let newCart = cart;
-    if (itemCode in cart) {
-      newCart[itemCode].qty = cart[itemCode].qty + 1;
-    } else {
-      newCart[itemCode] = { qty: 1, price, name, size, varriant };
-    }
-    setCart(newCart);
-    saveCart(newCart);
-  };
-  const saveCart = (myCart) => {
-    localStorage.setItem("cart", myCart);
-    let subt = 0;
-    let keys = Object.keys(cart);
-    for (let i = 0;i<keys.length; i++) {
-      subt += myCart[keys[i]].price * myCart[keys[i]].qty;
-    }
-    setsubtotal(subt);
-  };
-  const [subtotal, setsubtotal] = useState(0);
-  useEffect(() => {
-    console.log("Hey Iam a useEffect from layout.js");
-    try {
-      if (localStorage.getItem("cart")) {
-        setCart(JSON.parse(localStorage.getItem("cart")));
-      }
-    } catch (error) {
-      console.log(error);
-      localStorage.clear();
-    }
-  }, []);
-  const removeFromCart = (itemCode, qty, _name, _price, _size, _varriant) => {
-    let newCart = cart;
-    if (itemCode in cart) {
-      newCart[itemCode].qty = cart[itemCode].qty - qty;
-    }
-    if (newCart[itemCode]["qty"] <= 0) {
-      delete newCart[itemCode];
-    }
-    setCart(newCart);
-    saveCart(newCart);
-  };
+  
 
   const onChangePin = (e) => {
     setpin(e.target.value);
