@@ -8,7 +8,7 @@ import {
 import { BsFillBagCheckFill } from "react-icons/bs";
 import Link from "next/link";
 
-const CheckOut = ({cart, clearCart}) => {
+const CheckOut = ({cart, clearCart,}) => {
   return (
     <div>
       <Navbar />
@@ -120,7 +120,7 @@ const CheckOut = ({cart, clearCart}) => {
           </div>
         </div>
         <h2 className="font-bold text-xl">2. Review Cart Items</h2>
-        <div className="sideCart w-72 h-[100vh] absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full">
+        <div className="sideCart bg-pink-100 px-8 p-10">
           <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
           <span className="absolute top-5 right-2 cursor-pointer text-2xl text-pink-500"></span>
           <ol className="list-decimal font-semibold">
