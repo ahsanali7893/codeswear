@@ -60,7 +60,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subtotal }) => {
       </div>
       <div
         ref={ref}
-        className="sideCart w-72 h-full absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full"
+        className="sideCart w-72 h-[100vh] absolute top-0 right-0 bg-pink-100 px-8 p-10 transform transition-transform translate-x-full"
       >
         <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
         <span
@@ -93,10 +93,10 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subtotal }) => {
             })}
         </ol>
         <div className="flex">
-          <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
+          <Link href="/checkout"><button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
             <BsFillBagCheckFill className="m-1" />
             Checkout
-          </button>
+          </button></Link>
           <button
             onClick={clearCart}
             className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm"
