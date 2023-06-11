@@ -121,7 +121,6 @@ const CheckOut = ({cart, clearCart,}) => {
         </div>
         <h2 className="font-bold text-xl">2. Review Cart Items</h2>
         <div className="sideCart bg-pink-100 px-8 p-10">
-          <h2 className="font-bold text-xl text-center">Shopping Cart</h2>
           <span className="absolute top-5 right-2 cursor-pointer text-2xl text-pink-500"></span>
           <ol className="list-decimal font-semibold">
             {cart &&
