@@ -18,7 +18,6 @@ const Post = () => {
       setservice(false);
     }
   };
-  
 
   const onChangePin = (e) => {
     setpin(e.target.value);
