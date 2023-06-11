@@ -25,7 +25,7 @@ const Navbar = ({ cart, addToCart, removeFromCart, clearCart, subtotal }) => {
 
   const ref = useRef();
   return (
-    <div className="flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md">
+    <div className="flex flex-col md:flex-row md:justify-start justify-center items-center mb-1 py-2 shadow-md sticky top-0 bg-white z-10">
       <div className="logo mx-5">
         <Link href={"/"}>
           <Image
