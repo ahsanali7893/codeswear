@@ -7,35 +7,21 @@ import "src/app/globals.css";
 const Post = () => {
   const router = useRouter();
   const { slug } = router.query;
-  const [pin, setPin] = useState("");
-  const [service, setService] = useState(null);
-
-  useEffect(() => {
-    const checkServiceability = async () => {
-      if (pin) {
-        try {
-          const response = await fetch("http://localhost:3000/api/pincode");
-          const pinJson = await response.json();
-          if (pinJson.includes(parseInt(pin))) {
-            setService(true);
-          } else {
-            setService(false);
-          }
-        } catch (error) {
-          console.error("Error fetching pincode:", error);
-        }
-      } else {
-        setService(null);
-      }
-    };
-
-    checkServiceability();
-  }, [pin]);
-
-  const onChangePin = (e) => {
-    setPin(e.target.value);
+  const [pin, setpin] = useState();
+  const [service, setservice] = useState();
+  const checkServiceability = async () => {
+    let pins = await fetch("http://localhost:3000/api/pincode");
+    let pinJson = await pins.json();
+    if (pinJson.includes(parseInt(pin))) {
+      setservice(true);
+    } else {
+      setservice(false);
+    }
   };
 
+  const onChangePin = (e) => {
+    setpin(e.target.value);
+  };
   return (
     <>
       <Navbar />
