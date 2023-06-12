@@ -5,36 +5,37 @@ import { useState, useEffect } from "react";
 import "src/app/globals.css";
 
 const Post = () => {
-  const addToCart = (slug, quantity, price) => {
-    // Assuming itemCode is a property of the slug object
-    const itemCode = slug.itemCode;
-  
-    // Rest of your code using itemCode
-    if (itemCode in cart) {
-      newCart[itemCode].qty = cart[itemCode].qty + 1;
-    } else {
-      newCart[itemCode] = { qty: 1, price, name, size, variant };
-    }
-  
-    // ... rest of your code
-  };
   const router = useRouter();
   const { slug } = router.query;
-  const [pin, setpin] = useState();
-  const [service, setservice] = useState();
-  const checkServiceability = async () => {
-    let pins = await fetch("http://localhost:3000/api/pincode");
-    let pinJson = await pins.json();
-    if (pinJson.includes(parseInt(pin))) {
-      setservice(true);
-    } else {
-      setservice(false);
-    }
-  };
+  const [pin, setPin] = useState("");
+  const [service, setService] = useState(null);
+
+  useEffect(() => {
+    const checkServiceability = async () => {
+      if (pin) {
+        try {
+          const response = await fetch("http://localhost:3000/api/pincode");
+          const pinJson = await response.json();
+          if (pinJson.includes(parseInt(pin))) {
+            setService(true);
+          } else {
+            setService(false);
+          }
+        } catch (error) {
+          console.error("Error fetching pincode:", error);
+        }
+      } else {
+        setService(null);
+      }
+    };
+
+    checkServiceability();
+  }, [pin]);
 
   const onChangePin = (e) => {
-    setpin(e.target.value);
+    setPin(e.target.value);
   };
+
   return (
     <>
       <Navbar />

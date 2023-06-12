@@ -8,7 +8,7 @@ import {
 import { BsFillBagCheckFill } from "react-icons/bs";
 import Link from "next/link";
 
-const CheckOut = ({cart, clearCart,}) => {
+const CheckOut = ({cart, clearCart, subTotal}) => {
   return (
     <div>
       <Navbar />
@@ -145,12 +145,12 @@ const CheckOut = ({cart, clearCart,}) => {
                 );
               })}
           </ol>
-              <span className="total">Subtotal: 499</span>
+              <span className="total">Subtotal: ₨{subTotal}</span>
         </div>
         <div className="mx-4">
         <Link href="/checkout"><button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
             <BsFillBagCheckFill className="m-1" />
-            Pay ₨
+            Pay ₨ {subTotal}
           </button></Link>
         </div>
       </div>
