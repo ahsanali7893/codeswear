@@ -12,7 +12,7 @@ const CheckOut = ({cart, clearCart,}) => {
   return (
     <div>
       <Navbar />
-      <div className="container m-auto">
+      <div className="container px-2 sm:m-auto">
         <h1 className="font-bold text-3xl my-8 text-center">CheckOut</h1>
         <h2 className="font-bold text-xl">1. Delivery Details</h2>
         <div className="mx-auto flex">
@@ -145,6 +145,13 @@ const CheckOut = ({cart, clearCart,}) => {
                 );
               })}
           </ol>
+              <span className="total">Subtotal: 499</span>
+        </div>
+        <div className="mx-4">
+        <Link href="/checkout"><button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
+            <BsFillBagCheckFill className="m-1" />
+            Pay ₨
+          </button></Link>
         </div>
       </div>
       <Footer />

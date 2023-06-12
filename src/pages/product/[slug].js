@@ -5,6 +5,19 @@ import { useState, useEffect } from "react";
 import "src/app/globals.css";
 
 const Post = () => {
+  const addToCart = (slug, quantity, price) => {
+    // Assuming itemCode is a property of the slug object
+    const itemCode = slug.itemCode;
+  
+    // Rest of your code using itemCode
+    if (itemCode in cart) {
+      newCart[itemCode].qty = cart[itemCode].qty + 1;
+    } else {
+      newCart[itemCode] = { qty: 1, price, name, size, variant };
+    }
+  
+    // ... rest of your code
+  };
   const router = useRouter();
   const { slug } = router.query;
   const [pin, setpin] = useState();
