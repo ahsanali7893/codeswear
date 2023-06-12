@@ -119,8 +119,8 @@ const CheckOut = ({cart, clearCart,}) => {
             </div>
           </div>
         </div>
-        <h2 className="font-bold text-xl">2. Review Cart Items</h2>
-        <div className="sideCart bg-pink-100 px-8 p-10">
+        <h2 className="font-bold text-xl">2. Review Cart Items & Pay</h2>
+        <div className="sideCart bg-pink-100 p-8 m-4">
           <span className="absolute top-5 right-2 cursor-pointer text-2xl text-pink-500"></span>
           <ol className="list-decimal font-semibold">
             {cart &&
@@ -145,20 +145,6 @@ const CheckOut = ({cart, clearCart,}) => {
                 );
               })}
           </ol>
-          <div className="flex">
-            <Link href="/checkout">
-              <button className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm">
-                <BsFillBagCheckFill className="m-1" />
-                Checkout
-              </button>
-            </Link>
-            <button
-              onClick={clearCart}
-              className="flex mr-2 text-white bg-pink-500 border-0 py-2 px-2 focus:outline-none hover:bg-pink-600 rounded text-sm"
-            >
-              Clear Cart
-            </button>
-          </div>
         </div>
       </div>
       <Footer />
