@@ -40,8 +40,8 @@ const Login = () => {
     </form>
 
     <p className="mt-10 text-center text-sm text-gray-500">
-      Not a member?
-      <a href="#" className="font-semibold leading-6 text-pink-600 hover:text-pink-500">Start a 14 day free trial</a>
+      Or
+      <a href="#" className="font-semibold leading-6 text-pink-600 hover:text-pink-500 mx-2">Sign Up</a>
     </p>
   </div>
 </div>
