@@ -2,6 +2,7 @@ import Footer from "components/Footer";
 import Navbar from "components/Navbar";
 import React from "react";
 import "src/app/globals.css";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -26,7 +27,7 @@ const Login = () => {
         <div className="flex items-center justify-between">
           <label for="password" className="block text-sm font-medium leading-6 text-gray-900">Password</label>
           <div className="text-sm">
-            <a href="#" className="font-semibold text-pink-600 hover:text-pink-500">Forgot password?</a>
+           <Link href={"/forget"}className="font-semibold text-pink-600 hover:text-pink-500">Forgot password?</Link>
           </div>
         </div>
         <div className="mt-2">
